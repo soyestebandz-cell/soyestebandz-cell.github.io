@@ -1,0 +1,352 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Reto de 30 días para que lo lento vuelva a gustarte: una misión corta al día, cada una con el estudio que la explica. PDF de 48 páginas.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://soyestebandz-cell.github.io/">
+<meta property="og:title" content="El primer paso · Reto de 30 días">
+<meta property="og:description" content="Reto de 30 días para que lo lento vuelva a gustarte: una misión corta al día, cada una con el estudio que la explica. PDF de 48 páginas.">
+<meta property="og:image" content="https://soyestebandz-cell.github.io/img/portada.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#7C5CFF">
+<title>El primer paso · Reto de 30 días</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@500;700&display=swap">
+<style>
+/* Página de presentación de «El primer paso» con el mismo sistema que el libro (un solo tema, claro y alegre a propósito).
+   Composición: un camino de arriba abajo; cada tramo toma el color de una semana del reto, como el libro. */
+:root {
+  --papel: #FFFBF3; --blanco: #FFFFFF; --tinta: #23212C; --tinta-2: #423E52; --suave: #6F6982; --linea: rgba(35, 33, 44, .12);
+  --violeta: #7C5CFF; --violeta-m: #CDBFFF; --violeta-c: #EFEAFF;
+  --azul: #3D8BFF; --azul-c: #E3F1FF;
+  --mandarina: #FF7A3D; --mandarina-c: #FFE9DD;
+  --menta: #22C58B; --menta-c: #DDF7EA;
+  --sol: #FFC531; --sol-m: #FFE07A; --sol-c: #FFF3C9;
+  --chicle: #FF5FA2; --chicle-c: #FFE4F0;
+  --display: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+  --serif: 'Instrument Serif', Georgia, 'Times New Roman', serif;
+  --mono: 'JetBrains Mono', ui-monospace, Menlo, monospace;
+  --ancho: 1080px;
+  color-scheme: light;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--papel); color: var(--tinta); font: 400 17px/1.6 var(--display); -webkit-font-smoothing: antialiased; }
+img { max-width: 100%; height: auto; display: block; }
+a { color: inherit; }
+h1, h2, h3 { margin: 0; text-wrap: balance; }
+p { margin: 0; }
+em { font-family: var(--serif); font-style: italic; font-weight: 400; letter-spacing: -.01em; }
+
+.franja { padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: clamp(56px, 9vw, 96px); }
+.dentro { max-width: var(--ancho); margin: 0 auto; display: grid; gap: 28px; }
+.etq { font: 700 11px/1.4 var(--mono); letter-spacing: .16em; text-transform: uppercase; color: var(--suave); }
+h2 { font: 900 clamp(32px, 6vw, 52px)/1.02 var(--display); letter-spacing: -.035em; }
+h2 em { font-size: 1.1em; color: var(--violeta); }
+.entrada { font-size: clamp(17px, 2.2vw, 20px); line-height: 1.55; max-width: 34em; color: var(--tinta-2); }
+
+/* botón de compra */
+.boton { display: inline-flex; align-items: center; justify-content: center; gap: 12px; min-height: 58px; padding: 0 28px; border-radius: 999px;
+  background: var(--sol); color: var(--tinta); text-decoration: none; font: 800 18px/1 var(--display); letter-spacing: -.01em;
+  box-shadow: 0 4px 0 #D9A21A; transition: transform .15s ease, box-shadow .15s ease; }
+.boton:hover { transform: translateY(-2px); box-shadow: 0 6px 0 #D9A21A; }
+.boton:active { transform: translateY(2px); box-shadow: 0 2px 0 #D9A21A; }
+.boton:focus-visible { outline: 3px solid var(--tinta); outline-offset: 3px; }
+.boton .precio-b { font: 700 13px/1 var(--mono); padding: 7px 10px; border-radius: 999px; background: var(--tinta); color: var(--sol); letter-spacing: .04em; }
+.nota-boton { font: 600 12px/1.5 var(--mono); letter-spacing: .08em; text-transform: uppercase; }
+
+/* ——— portada ——— */
+.portada { background: var(--violeta); color: #fff; overflow: hidden; padding-top: clamp(28px, 5vw, 44px); }
+.portada .dentro { grid-template-columns: minmax(0, 1.15fr) minmax(0, .85fr); align-items: center; gap: clamp(28px, 5vw, 64px); }
+.portada .marca { grid-column: 1 / -1; display: flex; justify-content: space-between; gap: 16px; padding-bottom: 14px; border-bottom: 1px solid rgba(255, 255, 255, .25); color: rgba(255, 255, 255, .8); }
+.portada h1 { font: 900 clamp(56px, 11vw, 104px)/.9 var(--display); letter-spacing: -.05em; }
+.portada h1 em { display: block; color: var(--sol); font-size: 1.55em; line-height: .8; margin-top: .04em; letter-spacing: -.02em; }
+.portada .lema { font: 400 italic clamp(24px, 3.4vw, 32px)/1.2 var(--serif); margin-top: 34px; max-width: 15em; }
+.portada .lema b { font: 800 .85em/1 var(--display); font-style: normal; background: var(--sol); color: var(--tinta); padding: 1px 9px 4px; border-radius: 10px; }
+.portada .compra { display: flex; flex-wrap: wrap; align-items: center; gap: 14px 18px; margin-top: 30px; }
+.portada .nota-boton { color: rgba(255, 255, 255, .85); }
+.libro { position: relative; justify-self: center; width: min(100%, 380px); }
+.libro img { border-radius: 14px; transform: rotate(3deg); box-shadow: 0 30px 60px -20px rgba(20, 10, 60, .6), 0 0 0 1px rgba(255, 255, 255, .15); }
+.libro .pegatina { position: absolute; left: -14px; bottom: 34px; transform: rotate(-8deg); background: var(--chicle); color: var(--tinta); border-radius: 999px; padding: 10px 16px; font: 800 15px/1 var(--display); box-shadow: 0 8px 18px -6px rgba(20, 10, 60, .45); }
+
+/* ——— ¿te suena? ——— */
+.suena .tarjetas { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 230px), 1fr)); gap: 14px; }
+.suena .t { background: var(--blanco); border-radius: 26px; padding: 22px 22px 24px; display: grid; gap: 14px; align-content: start; }
+.suena .t .c { width: 40px; height: 40px; border-radius: 50%; }
+.suena .t p { font: 700 18px/1.3 var(--display); letter-spacing: -.01em; }
+.suena .cierre { font: 400 italic clamp(24px, 3.4vw, 32px)/1.25 var(--serif); }
+
+/* ——— por qué pasa ——— */
+.pasa { background: var(--violeta-c); }
+.pasa .tres { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr)); gap: 14px; }
+.pasa .an { background: var(--blanco); border-radius: 26px; padding: 22px; display: grid; justify-items: center; text-align: center; gap: 8px; }
+.pasa .an.estrella { background: var(--violeta); color: #fff; }
+.pasa .an .etq { color: inherit; opacity: .7; }
+.pasa .an b { font: 800 19px/1.2 var(--display); letter-spacing: -.02em; }
+.pasa .an svg { width: 112px; height: 112px; }
+.pasa .an span { font-size: 14px; line-height: 1.4; }
+.pasa .cita { font: 500 12px/1.5 var(--mono); color: var(--suave); }
+.pasa .quiza { font: 400 italic clamp(26px, 4vw, 38px)/1.2 var(--serif); }
+.pasa .quiza span { color: var(--violeta); }
+
+/* ——— el reto (las cinco etapas) ——— */
+.etapas { display: grid; gap: 12px; }
+.etapa { display: grid; grid-template-columns: 64px minmax(0, 1fr); gap: 18px; align-items: start; border-radius: 26px; padding: 20px 22px; background: var(--c-claro); }
+.etapa .bola { width: 64px; height: 64px; border-radius: 50%; background: var(--c-fuerte); color: var(--c-sobre); display: grid; place-items: center; }
+.etapa .bola svg { width: 28px; height: 28px; }
+.etapa h3 { font: 800 22px/1.15 var(--display); letter-spacing: -.02em; }
+.etapa h3 small { display: block; font: 700 11px/1.4 var(--mono); letter-spacing: .16em; text-transform: uppercase; color: var(--c-txt); margin-bottom: 4px; }
+.etapa h3 em { color: var(--c-txt); }
+.etapa .misiones { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+.etapa .misiones span { background: var(--blanco); border-radius: 999px; padding: 7px 13px; font: 600 14px/1.2 var(--display); }
+.e1 { --c-claro: var(--azul-c); --c-fuerte: var(--azul); --c-sobre: #fff; --c-txt: #1F6FE5; }
+.e2 { --c-claro: var(--mandarina-c); --c-fuerte: var(--mandarina); --c-sobre: var(--tinta); --c-txt: #C9471A; }
+.e3 { --c-claro: var(--menta-c); --c-fuerte: var(--menta); --c-sobre: var(--tinta); --c-txt: #0B8A5C; }
+.e4 { --c-claro: var(--sol-c); --c-fuerte: var(--sol); --c-sobre: var(--tinta); --c-txt: #946A00; }
+.e5 { --c-claro: var(--chicle-c); --c-fuerte: var(--chicle); --c-sobre: var(--tinta); --c-txt: #C92A6E; }
+
+/* ——— por dentro ——— */
+.paginas { display: flex; gap: 16px; overflow-x: auto; padding-bottom: 14px; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch; }
+.paginas figure { margin: 0; flex: 0 0 min(72%, 250px); scroll-snap-align: start; display: grid; gap: 10px; }
+.paginas img { border-radius: 12px; box-shadow: 0 14px 30px -14px rgba(35, 33, 44, .35), 0 0 0 1px var(--linea); aspect-ratio: 612 / 792; width: 100%; height: auto; background: var(--blanco); }
+.paginas figcaption { font: 600 14px/1.35 var(--display); color: var(--tinta-2); }
+.desliza { font: 600 12px/1.4 var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--suave); }
+
+/* ——— estudios ——— */
+.cifras { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 230px), 1fr)); gap: 14px; }
+.cifra { background: var(--blanco); border-radius: 26px; padding: 24px; display: grid; gap: 8px; align-content: start; }
+.cifra b { font: 900 clamp(40px, 6vw, 54px)/1 var(--display); letter-spacing: -.04em; color: var(--c-txt); font-variant-numeric: tabular-nums; }
+.cifra p { font-size: 15px; line-height: 1.45; }
+.cifra small { font: 500 12px/1.5 var(--mono); color: var(--suave); }
+
+/* ——— para quién ——— */
+.quien .dos { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 14px; }
+.quien .lado { border-radius: 26px; padding: 24px 26px; }
+.quien ul { list-style: none; margin: 14px 0 0; padding: 0; display: grid; gap: 12px; }
+.quien li { display: grid; grid-template-columns: 22px minmax(0, 1fr); gap: 10px; font-size: 16px; line-height: 1.45; }
+.quien li::before { content: ''; width: 14px; height: 14px; border-radius: 50%; margin-top: 5px; background: var(--c-fuerte); }
+
+/* ——— precio ——— */
+.precio { background: var(--violeta); color: #fff; }
+.precio .caja { background: var(--blanco); color: var(--tinta); border-radius: 32px; padding: clamp(24px, 5vw, 44px); display: grid; grid-template-columns: minmax(0, 200px) minmax(0, 1fr); gap: clamp(20px, 4vw, 44px); align-items: center; max-width: 820px; margin: 0 auto; width: 100%; }
+.precio .caja img { border-radius: 10px; transform: rotate(-3deg); box-shadow: 0 18px 36px -16px rgba(35, 33, 44, .5); }
+.precio .monto { display: flex; align-items: baseline; gap: 14px; flex-wrap: wrap; }
+.precio .monto b { font: 900 clamp(56px, 9vw, 80px)/1 var(--display); letter-spacing: -.05em; }
+.precio .monto b small { font-size: .42em; letter-spacing: 0; margin-left: 6px; }
+.precio .monto s { font: 600 18px/1 var(--mono); color: var(--suave); }
+.precio ul { list-style: none; padding: 0; margin: 16px 0 24px; display: grid; gap: 9px; }
+.precio li { display: grid; grid-template-columns: 22px minmax(0, 1fr); gap: 10px; font-size: 16px; line-height: 1.4; }
+.precio li::before { content: ''; width: 12px; height: 12px; border-radius: 50%; margin-top: 6px; background: var(--menta); }
+.precio .nota-boton { color: var(--suave); margin-top: 14px; display: block; }
+
+/* ——— preguntas ——— */
+.preguntas { display: grid; gap: 10px; max-width: 820px; }
+.preguntas details { background: var(--blanco); border-radius: 22px; padding: 4px 22px; }
+.preguntas summary { cursor: pointer; list-style: none; display: flex; justify-content: space-between; gap: 16px; align-items: center; padding: 16px 0; font: 700 17px/1.35 var(--display); }
+.preguntas summary::-webkit-details-marker { display: none; }
+.preguntas summary::after { content: '+'; flex: 0 0 30px; height: 30px; border-radius: 50%; background: var(--violeta-c); color: var(--violeta); display: grid; place-items: center; font: 700 18px/1 var(--mono); }
+.preguntas details[open] summary::after { content: '–'; }
+.preguntas summary:focus-visible { outline: 3px solid var(--violeta); outline-offset: 4px; border-radius: 8px; }
+.preguntas details p { padding: 0 0 18px; color: var(--tinta-2); font-size: 16px; }
+
+/* ——— pie ——— */
+.pie { border-top: 1px solid var(--linea); padding-block: 40px; }
+.pie .dentro { grid-template-columns: 96px minmax(0, 1fr); align-items: center; gap: 22px; }
+.pie p { font-size: 14px; color: var(--suave); line-height: 1.55; }
+.pie b { color: var(--tinta); }
+
+/* medallón de la mascota: círculo con aros finos */
+.medallon { position: relative; width: 96px; height: 96px; }
+.medallon .disco { position: absolute; inset: 13px; border-radius: 50%; background: var(--sol-m); overflow: hidden; }
+.medallon .disco svg { position: absolute; left: 50%; top: 12%; width: 80%; transform: translateX(-50%); }
+.medallon::before, .medallon::after { content: ''; position: absolute; border-radius: 50%; border: 1px solid rgba(35, 33, 44, .4); }
+.medallon::before { inset: 6px; }
+.medallon::after { inset: 0; border-color: rgba(35, 33, 44, .16); }
+
+/* barra de compra fija en el celular */
+.barra { display: none; }
+@media (max-width: 720px) {
+  .portada .dentro { grid-template-columns: minmax(0, 1fr); }
+  .libro { width: min(78%, 320px); }
+  .precio .caja { grid-template-columns: minmax(0, 1fr); }
+  .precio .caja img { width: 150px; }
+  .barra { display: flex; position: fixed; left: 0; right: 0; bottom: 0; z-index: 5; justify-content: center;
+    padding: 10px max(16px, env(safe-area-inset-right, 0px)) calc(10px + env(safe-area-inset-bottom, 0px)) max(16px, env(safe-area-inset-left, 0px));
+    background: rgba(255, 251, 243, .94); border-top: 1px solid var(--linea); backdrop-filter: blur(8px); }
+  .barra .boton { width: 100%; max-width: 440px; min-height: 52px; font-size: 17px; }
+  body { padding-bottom: 84px; }
+}
+@media (prefers-reduced-motion: reduce) { .boton { transition: none; } }
+</style>
+
+<header class="portada franja">
+  <div class="dentro">
+    <div class="marca etq"><span>Rápido Pero inteligente</span><span>Reto de 30 días</span></div>
+    <div>
+      <h1>El primer <em>paso.</em></h1>
+      <p class="lema">30 días para que lo <b>lento</b> vuelva a gustarte.</p>
+      <div class="compra">
+        <a class="boton" href="https://pay.hotmart.com/U108240650H" target="_blank" rel="noopener" data-pago>Quiero el reto <span class="precio-b">7 USD</span></a>
+        <span class="nota-boton">PDF de 48 páginas · pago único</span>
+      </div>
+    </div>
+    <div class="libro">
+      <img src="img/portada.jpg" alt="Portada del libro «El primer paso»: un camino de 30 círculos de colores que sube hasta la mascota del canal" width="816" height="1056">
+      <span class="pegatina">30 misiones</span>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="suena franja">
+    <div class="dentro">
+      <span class="etq">Antes de nada</span>
+      <h2>¿Te <em>suena?</em></h2>
+      <div class="tarjetas">
+        <div class="t"><span class="c" style="background:var(--azul)"></span><p>Lees un párrafo y, al terminar, no sabes qué decía.</p></div>
+        <div class="t"><span class="c" style="background:var(--mandarina)"></span><p>Una película entera se hace larguísima.</p></div>
+        <div class="t"><span class="c" style="background:var(--menta)"></span><p>Abres el celular sin haberlo decidido.</p></div>
+        <div class="t"><span class="c" style="background:var(--sol)"></span><p>Lo importante siempre queda para mañana.</p></div>
+      </div>
+      <p class="cierre">Le pasa a casi todo el mundo. Y tiene explicación.</p>
+    </div>
+  </section>
+
+  <section class="pasa franja">
+    <div class="dentro">
+      <span class="etq">Por qué pasa</span>
+      <h2>La dopamina no es placer. Es <em>ganas.</em></h2>
+      <p class="entrada">Tiene mucho más que ver con querer que con disfrutar. Y lo que más la enciende no es el premio seguro, sino el que llega solo a veces. En un experimento clásico, la señal de dopamina fue mucho más alta cuando el premio llegaba la mitad de las veces:</p>
+      <div class="tres">
+        <div class="an"><span class="etq">El premio llega</span><b>Siempre</b>
+          <svg viewBox="0 0 116 116" aria-hidden="true"><circle cx="58" cy="58" r="47" fill="none" stroke="#E3F1FF" stroke-width="12"/><circle cx="58" cy="58" r="47" fill="none" stroke="#3D8BFF" stroke-width="12" stroke-linecap="round" stroke-dasharray="65 296" transform="rotate(-90 58 58)"/><text x="58" y="62" text-anchor="middle" font-family="JetBrains Mono, monospace" font-weight="700" font-size="10" letter-spacing="1.2" fill="#23212C">BAJA</text></svg>
+          <span>Ya se sabe lo que viene.</span></div>
+        <div class="an"><span class="etq">El premio llega</span><b>Nunca</b>
+          <svg viewBox="0 0 116 116" aria-hidden="true"><circle cx="58" cy="58" r="47" fill="none" stroke="#FFE9DD" stroke-width="12"/><circle cx="58" cy="58" r="47" fill="none" stroke="#FF7A3D" stroke-width="12" stroke-linecap="round" stroke-dasharray="9 296" transform="rotate(-90 58 58)"/><text x="58" y="62" text-anchor="middle" font-family="JetBrains Mono, monospace" font-weight="700" font-size="10" letter-spacing="1.2" fill="#23212C">CASI NADA</text></svg>
+          <span>No hay nada que esperar.</span></div>
+        <div class="an estrella"><span class="etq">El premio llega</span><b>La mitad de las veces</b>
+          <svg viewBox="0 0 116 116" aria-hidden="true"><circle cx="58" cy="58" r="47" fill="none" stroke="rgba(255,255,255,.18)" stroke-width="12"/><circle cx="58" cy="58" r="47" fill="none" stroke="#FFC531" stroke-width="12" stroke-linecap="round" stroke-dasharray="278 296" transform="rotate(-90 58 58)"/><text x="58" y="62" text-anchor="middle" font-family="JetBrains Mono, monospace" font-weight="700" font-size="10" letter-spacing="1.2" fill="#FFFFFF">ALTA</text></svg>
+          <span>«¿Y si esta vez sí?»</span></div>
+      </div>
+      <p class="cita">Esquema simplificado de Fiorillo, Tobler y Schultz (2003), Science.</p>
+      <p class="quiza">El feed es exactamente eso: un <span>«a veces»</span> infinito. Por eso este reto no va de fuerza de voluntad, sino de entrenar otra vez los premios lentos.</p>
+    </div>
+  </section>
+
+  <section class="reto franja">
+    <div class="dentro">
+      <span class="etq">El reto</span>
+      <h2>30 días. Una misión al día. <em>Nada más.</em></h2>
+      <p class="entrada">Casi todas las misiones caben en 15 minutos. Cada una trae su porqué, sacado de un estudio real, y una casilla para marcarla.</p>
+      <div class="etapas">
+        <div class="etapa e1"><div class="bola"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg></div>
+          <div><h3><small>Semana 1</small>Mirar. <em>Sin prohibir nada todavía.</em></h3><div class="misiones"><span>La foto de partida</span><span>Caza el disparador</span><span>La pantalla gris</span><span>Diez minutos con nada</span></div></div></div>
+        <div class="etapa e2"><div class="bola"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M20 4 8.1 15.9M14.5 14.5 20 20M8.1 8.1 12 12"/></svg></div>
+          <div><h3><small>Semana 2</small>Cortar. <em>La semana difícil.</em></h3><div class="misiones"><span>Esconde la app</span><span>El celular duerme fuera</span><span>Surfea la ola</span><span>El día del vacío</span></div></div></div>
+        <div class="etapa e3"><div class="bola"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21v-9"/><path d="M12 12C12 7.5 8.5 5 4 5c0 4.5 3 7 8 7z"/><path d="M12 14.5c0-4 3-6.5 8-6.5 0 4-3 6.5-8 6.5z"/></svg></div>
+          <div><h3><small>Semana 3</small>Llenar. <em>Premios lentos.</em></h3><div class="misiones"><span>Camina sin audífonos</span><span>Diez páginas de papel</span><span>Una charla sin celular</span><span>El premio empaquetado</span></div></div></div>
+        <div class="etapa e4"><div class="bola"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="13" width="8" height="8" rx="1.5"/><rect x="13" y="13" width="8" height="8" rx="1.5"/><rect x="8" y="3" width="8" height="8" rx="1.5"/></svg></div>
+          <div><h3><small>Semana 4</small>Construir. <em>Entrenar el foco.</em></h3><div class="misiones"><span>25 minutos de foco</span><span>Lo que dejas para mañana</span><span>Termina algo pequeño</span><span>45 minutos</span></div></div></div>
+        <div class="etapa e5"><div class="bola"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="9.5" rx="6" ry="7.5"/><path d="M12 17v4.5M8 21.5h8M9.4 6.3c.7-.9 1.5-1.4 2.6-1.6"/></svg></div>
+          <div><h3><small>Días 29 y 30</small>El espejo. <em>Antes y después.</em></h3><div class="misiones"><span>La foto de llegada</span><span>Carta a tu yo del futuro</span></div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="adentro franja" style="background:var(--blanco)">
+    <div class="dentro">
+      <span class="etq">48 páginas</span>
+      <h2>Así es <em>por dentro.</em></h2>
+      <div class="paginas" tabindex="0" aria-label="Páginas de muestra del libro">
+        <figure><img src="img/mapa.jpg" alt="Página del mapa con los 30 días" width="612" height="792"><figcaption>El mapa: los 30 días, para ir marcando.</figcaption></figure>
+        <figure><img src="img/dia-01.jpg" alt="Página del día 1" width="612" height="792"><figcaption>Cada día: la misión, un truco y el estudio que la explica.</figcaption></figure>
+        <figure><img src="img/excusas.jpg" alt="Página de las excusas del cerebro" width="612" height="792"><figcaption>Las excusas que tu cerebro te va a poner, y qué contestarle.</figcaption></figure>
+        <figure><img src="img/dia-13.jpg" alt="Página del día 13, el día del vacío" width="612" height="792"><figcaption>El día del vacío: qué esperar cuando más cuesta.</figcaption></figure>
+        <figure><img src="img/partida.jpg" alt="Página para anotar el punto de partida" width="612" height="792"><figcaption>Tu foto del día 0, para compararla con la del día 29.</figcaption></figure>
+        <figure><img src="img/dia-30.jpg" alt="Página del día 30, carta a tu yo del futuro" width="612" height="792"><figcaption>El final: una carta a tu yo del futuro.</figcaption></figure>
+      </div>
+      <span class="desliza">Desliza para ver más →</span>
+    </div>
+  </section>
+
+  <section class="estudios franja">
+    <div class="dentro">
+      <span class="etq">Con ciencia, sin humo</span>
+      <h2>Cada misión, con <em>su estudio.</em></h2>
+      <p class="entrada">El libro cita 30 estudios publicados en revistas como Science, PNAS o Psychological Bulletin. Y cuando algo todavía no se sabe, también lo dice. Tres ejemplos:</p>
+      <div class="cifras">
+        <div class="cifra e1"><b>−38 min</b><p>de pantalla al día al poner el celular en blanco y negro.</p><small>Holte y Ferraro, 2020 · día 4</small></div>
+        <div class="cifra e3"><b>81 %</b><p>de las personas tuvo más ideas caminando que sentada.</p><small>Oppezzo y Schwartz, 2014 · día 15</small></div>
+        <div class="cifra e5"><b>+51 %</b><p>de visitas al gimnasio al juntar un gusto con un esfuerzo.</p><small>Milkman, Minson y Volpp, 2014 · día 20</small></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="quien franja" style="background:var(--blanco)">
+    <div class="dentro">
+      <span class="etq">Para quién</span>
+      <h2>¿Es <em>para ti?</em></h2>
+      <div class="dos">
+        <div class="lado e3" style="background:var(--menta-c)"><h3 class="etq" style="color:#0B8A5C">Sí, si…</h3>
+          <ul><li>sientes que concentrarte cuesta más que antes;</li><li>quieres usar menos el celular sin dejarlo del todo;</li><li>te gustan las cosas explicadas con ciencia y sin promesas exageradas;</li><li>tienes unos 15 minutos al día.</li></ul></div>
+        <div class="lado e2" style="background:var(--mandarina-c)"><h3 class="etq" style="color:#C9471A">Mejor no, si…</h3>
+          <ul><li>buscas un método milagro;</li><li>esperas un curso con videos (esto es un PDF para hacer, no para mirar);</li><li>necesitas tratar una adicción o un problema de salud mental: ahí lo mejor es un profesional.</li></ul></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="precio franja" id="precio">
+    <div class="dentro">
+      <div class="caja">
+        <img src="img/portada.jpg" alt="" width="816" height="1056">
+        <div>
+          <span class="etq">El primer paso · reto de 30 días</span>
+          <div class="monto"><b>7<small>USD</small></b><s>antes 19 USD</s></div>
+          <ul>
+            <li>PDF de 48 páginas, para el celular, la tablet o para imprimir.</li>
+            <li>30 misiones cortas, cada una con su estudio.</li>
+            <li>Revisiones cada semana y tu foto del antes y del después.</li>
+            <li>Una carta a tu yo del futuro para cerrar.</li>
+          </ul>
+          <a class="boton" href="https://pay.hotmart.com/U108240650H" target="_blank" rel="noopener" data-pago>Quiero el reto <span class="precio-b">7 USD</span></a>
+          <span class="nota-boton">Pago único y seguro con Hotmart</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq franja">
+    <div class="dentro">
+      <span class="etq">Preguntas</span>
+      <h2>Lo que suelen <em>preguntar.</em></h2>
+      <div class="preguntas">
+        <details><summary>¿Es un curso?</summary><p>No. Es un PDF de 48 páginas, mitad guía y mitad cuaderno: lees un poco, haces la misión del día y la marcas.</p></details>
+        <details><summary>¿Cuánto tiempo necesito al día?</summary><p>Casi todas las misiones caben en 15 minutos o menos. En la semana 4 los bloques de foco crecen a 25 y 45 minutos, porque ese es el entrenamiento.</p></details>
+        <details><summary>¿Tengo que borrar mis redes sociales?</summary><p>No. El reto te ayuda a usarlas menos y mejor, con cambios pequeños: esconder una app, quitar avisos o ponerles un límite.</p></details>
+        <details><summary>¿Cómo lo recibo?</summary><p>El pago se hace en Hotmart, una plataforma de pago segura. Al terminar, Hotmart te envía un correo con el acceso para descargar el PDF. Lo puedes usar en el celular o imprimirlo.</p></details>
+        <details><summary>¿Y si un día no lo hago?</summary><p>Sigues al día siguiente. En el estudio más citado sobre hábitos, saltarse un día suelto no cambió el resultado.</p></details>
+        <details><summary>¿Sustituye a un profesional?</summary><p>No. Es un material de divulgación. Si el uso del celular te causa mucho malestar, o hay ansiedad o tristeza que no se van, lo mejor es hablar con un profesional.</p></details>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="pie franja">
+  <div class="dentro">
+    <div class="medallon"><div class="disco"><svg viewBox="0 0 400 460" aria-hidden="true"><path d="M168 330 L232 330 L240 460 L160 460 Z" fill="#121110"/><circle cx="200" cy="190" r="172" fill="#1c1a19"/><path d="M92 100 Q128 76 166 90" stroke="#8d8782" stroke-width="13" stroke-linecap="round" fill="none"/><path d="M234 90 Q272 76 308 100" stroke="#8d8782" stroke-width="13" stroke-linecap="round" fill="none"/><ellipse cx="138" cy="196" rx="54" ry="57" fill="#fff"/><ellipse cx="262" cy="196" rx="54" ry="57" fill="#fff"/><circle cx="152" cy="184" r="21" fill="#0b0b0b"/><circle cx="260" cy="184" r="21" fill="#0b0b0b"/><circle cx="159" cy="176" r="6" fill="#fff"/><circle cx="267" cy="176" r="6" fill="#fff"/><path d="M176 270 Q200 285 224 270" stroke="#4a4542" stroke-width="5" stroke-linecap="round" fill="none"/></svg></div></div>
+    <p><b>Rápido Pero inteligente</b> · Neurociencia y dopamina, explicadas en corto.<br>«El primer paso» es material de divulgación y no sustituye el consejo de un profesional de la salud. © 2026.</p>
+  </div>
+</footer>
+
+<div class="barra"><a class="boton" href="https://pay.hotmart.com/U108240650H" target="_blank" rel="noopener" data-pago>Quiero el reto <span class="precio-b">7 USD</span></a></div>
+
+<script>
+// ENLACE DE PAGO: pega aquí el enlace de Hotmart, Gumroad, Mercado Pago… y todos los botones irán a él.
+const ENLACE_PAGO = 'https://pay.hotmart.com/U108240650H';
+if (ENLACE_PAGO) document.querySelectorAll('[data-pago]').forEach(a => { a.href = ENLACE_PAGO; a.target = '_blank'; a.rel = 'noopener'; });
+</script>
+
+</html>
